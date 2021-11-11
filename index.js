@@ -30,20 +30,6 @@ function showRandomNumber() {
     return randomNum;
 }
 
-// const rollDice = function () {
-//     setInterval(showRandomNumber, 40)
-// };
-
-// const stopRolling = function () {
-//     setTimeout(function () {
-//         clearInterval(rollDice);
-//     }, 500);
-// };
-
-// function showDiceNumber() {
-//     return showRandomNumber();
-// }
-
 function updateCurrScore() {
     currScores[activePlayer] = 0;
     currScoresElem[activePlayer].textContent = currScores[activePlayer];

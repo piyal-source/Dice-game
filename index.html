@@ -5,11 +5,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
+    <main>
+        <section class="sec-card sec-player1 sec-highlight">
+            <section>
+                <h2>PLAYER 1</h2>
+                <p class="dice-score score score1">0</p>
+            </section>
+            <section class="sec-curr">
+                <p>CURRENT</p>
+                <P class="score curr-score1">0</P>
+            </section>
+        </section>
+        <button class="btn-new-game">🕹 NEW GAME</button>
+        <img src="#" title="Dice" alt="Dice" height="60px" class="hidden" />
+        <button class="btn-roll">🎲 ROLL DICE</button>
+        <button class="btn-hold">✋🏼 HOLD</button>
+        <section class="sec-card sec-player2 sec-other">
+            <section>
+                <h2>PLAYER 2</h2>
+                <p class="dice-score score score2">0</p>
+            </section>
+            <section class="sec-curr">
+                <p>CURRENT</p>
+                <P class="score curr-score2">0</P>
+            </section>
+        </section>
+    </main>
 
+    <script src="index.js" type="text/javascript"></script>
 </body>
 
 </html>

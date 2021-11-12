@@ -12,12 +12,12 @@ const secPlayers = [document.querySelector(".sec-player1"), document.querySelect
 // Active player and scores initialized
 let activePlayer = 0;
 let scores = [0, 0];
-let currScores = [0, 0];
+let currScore = 0;
 
 // Update all scores when new game begins
 function newGame() {
     for (let i = 0; i < 2; i++) {
-        currScoresElem[i].textContent = currScores[i];
+        currScoresElem[i].textContent = currScore;
         scoresElem[i].textContent = scores[i];
     }
 }
@@ -36,8 +36,8 @@ function showRandomNumber() {
 
 // Set current score of active player = 0
 function updateCurrScore() {
-    currScores[activePlayer] = 0;
-    currScoresElem[activePlayer].textContent = currScores[activePlayer];
+    currScore = 0;
+    currScoresElem[activePlayer].textContent = currScore;
 }
 
 // Change style when active player changes (Highlight active player)
@@ -63,14 +63,14 @@ btnRoll.addEventListener("click", function () {
     }
     // Else, add current score and continue
     else {
-        currScores[activePlayer] += activeDice;
-        currScoresElem[activePlayer].textContent = currScores[activePlayer];
+        currScore += activeDice;
+        currScoresElem[activePlayer].textContent = currScore;
     }
 });
 
 // On clicking Hold button, update total score and change player
 btnHold.addEventListener("click", function () {
-    scores[activePlayer] += currScores[activePlayer];
+    scores[activePlayer] += currScore;
     scoresElem[activePlayer].textContent = scores[activePlayer];
     updateCurrScore();
     changePlayer();
@@ -83,6 +83,6 @@ btnNewGame.addEventListener("click", function () {
     }
     activePlayer = 0;
     scores = [0, 0];
-    currScores = [0, 0];
+    currScore = 0;
     newGame();
 });

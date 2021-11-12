@@ -1,8 +1,8 @@
 'use strict';
 
 // HTML elements initialized
-const scoresElem = [document.querySelector(".score1"), document.querySelector(".score2")];
-const currScoresElem = [document.querySelector(".curr-score1"), document.querySelector(".curr-score2")];
+const scoresElem = [document.getElementById("score1"), document.getElementById("score2")];
+const currScoresElem = [document.getElementById("curr-score1"), document.getElementById("curr-score2")];
 const btnNewGame = document.querySelector(".btn-new-game");
 const btnRoll = document.querySelector(".btn-roll");
 const btnHold = document.querySelector(".btn-hold");

@@ -12,12 +12,12 @@
 <body>
     <main>
         <!-- Player 1's section begins-->
-        <section class="sec-card sec-player1 sec-highlight">
+        <section class="sec-card sec-player1 sec-active">
             <section>
-                <h2>PLAYER 1</h2>
+                <h2 id="h-player1">PLAYER 1</h2>
                 <p class="dice-score score" id="score1">0</p>
             </section>
-            <section class="sec-curr-score">
+            <section class="sec-curr-score white">
                 <p>CURRENT</p>
                 <P class="score" id="curr-score1">0</P>
             </section>
@@ -26,15 +26,15 @@
         <!-- Buttons and dice in the middle -->
         <button class="btn-new-game">🕹 NEW GAME</button>
         <img src="#" title="Dice" alt="Dice" height="60px" class="hidden img-dice" />
-        <button class="btn-roll">🎲 ROLL DICE</button>
-        <button class="btn-hold">✋🏼 HOLD</button>
+        <button class="btn-roll btn-change">🎲 ROLL DICE</button>
+        <button class="btn-hold btn-change">✋🏼 HOLD</button>
         <!-- Player 2's section begins -->
-        <section class="sec-card sec-player2 sec-other">
+        <section class="sec-card sec-player2">
             <section>
-                <h2>PLAYER 2</h2>
+                <h2 id="h-player2">PLAYER 2</h2>
                 <p class="dice-score score" id="score2">0</p>
             </section>
-            <section class="sec-curr-score">
+            <section class="sec-curr-score white">
                 <p>CURRENT</p>
                 <P class="score" id="curr-score2">0</P>
             </section>

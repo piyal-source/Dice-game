@@ -30,12 +30,10 @@ main {
     flex-direction: column;
     justify-content: space-between;
     border-radius: 0.2em;
-}
-.sec-highlight {
-    background-color: #ffffffa9;
-}
-.sec-other {
     background-color: rgba(255, 255, 255, 0.281);
+}
+.sec-active {
+    background-color: #ffffffa9;
 }
 .sec-player1 {
     padding-right: 5rem;
@@ -77,4 +75,10 @@ button {
 }
 .btn-hold {
     bottom: 4rem;
+}
+.winner {
+    background-color: #753682;
+}
+.white {
+    color: #ffffff;
 }

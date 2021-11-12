@@ -84,7 +84,7 @@ function win() {
 // On clicking Hold button, update total score and current score, and change player
 btnHold.addEventListener("click", function () {
     setScore(activePlayer, scores[activePlayer] + currScore);
-    if (scores[activePlayer] >= 50) {
+    if (scores[activePlayer] >= 100) {
         win();
     }
     else {
